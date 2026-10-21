@@ -29,10 +29,10 @@ class Category:
         return products_str
 
     @classmethod
-    def new_product(cls, product_korzina):
+    def new_product(cls, product_info):
         return Product(
-            product_korzina['name'],
-            product_korzina['description'],
-            product_korzina['price'],
-            product_korzina['quantity']
+            product_info['name'],
+            product_info['description'],
+            product_info['price'],
+            product_info['quantity']
         )
